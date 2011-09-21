@@ -18,7 +18,7 @@ $('#myelem').file(function(inp) {
 });
 ```
 
-# license (MIT)
+## License (MIT)
 
 Copyright (C) 2011 by Ge.tt
 
