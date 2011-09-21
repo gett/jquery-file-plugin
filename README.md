@@ -12,7 +12,7 @@ it also supports html5 files
 
 ``` js
 $('#myelem').file(function(inp) {
-	for (var i = 0; i < inp.files; i++) {
+	for (var i = 0; i < inp.files.length; i++) {
 		console.log(inp.files[i].name); // yay html5!
 	}
 });
