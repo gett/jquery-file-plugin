@@ -18,6 +18,17 @@ $('#myelem').file(function(inp) {
 });
 ```
 
+if you want to upload the file after it has been chosen you need to attach it to a form
+
+``` js
+$('#myelem').file(function(inp) {
+	inp.id = inp.name = 'myFileInput';
+	
+	$('<form enctype="multipart/form-data" action="/upload" method="post"></form>')
+		.append(inp).hide().appendTo('body').submit();
+});
+```
+
 ## License (MIT)
 
 Copyright (C) 2011 by Ge.tt
